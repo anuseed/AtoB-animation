@@ -1,7 +1,7 @@
 /* General Reset & Typography */
 body {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: white; /* calm purple */
   color: #333;
   overflow-x: hidden;
@@ -73,7 +73,7 @@ nav a {
 .steps-container {
   color: #3a2fa0;
   font-weight: 500;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   line-height: 1.2;
   user-select: none;
