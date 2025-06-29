@@ -1,0 +1,194 @@
+/* General Reset & Typography */
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: white; /* calm purple */
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background: #b9acf3;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+/* Hero Section */
+.hero {
+  /* background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80"); */
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  padding-left: 3rem;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  height: 300px;
+}
+
+.steps-container {
+  color: #3a2fa0;
+  font-weight: 500;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  user-select: none;
+}
+
+/* Step positioning */
+.step {
+  margin: 0;
+  padding: 0;
+}
+
+.step-reveal {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  animation: clipReveal 6s ease forwards;
+  color: #ff680a;
+}
+
+.step-refine {
+  text-indent: 1.5em;
+  margin-top: 0.3em;
+  color: #ff680a;
+  filter: blur(8px);
+  animation: sharpen 6s forwards;
+}
+
+.step-realign {
+  text-indent: 3em;
+  margin-top: 0.3em;
+  display: inline-block;
+  transform-origin: left bottom;
+  animation: straightenText 6s forwards;
+  /* Initially skew letters */
+  transform: skew(-15deg);
+  color: #ff680a;
+}
+
+/* ---------------- Animations ---------------- */
+
+@keyframes clipReveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0% 0 0);
+    -webkit-clip-path: inset(0 0% 0 0);
+  }
+}
+
+@keyframes sharpen {
+  0% {
+    filter: blur(8px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+/* Skewed letters to straight */
+@keyframes straightenText {
+  0% {
+    transform: skew(-15deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+/* Feature Section */
+.features {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #eee4ff;
+}
+
+.feature-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+/* About Me */
+.about {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #e4d5ff;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 1rem;
+  background: #f2ecff;
+  text-align: center;
+}
+
+.testimonials p {
+  max-width: 600px;
+  margin: 1rem auto;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #b9acf3;
+  color: #333;
+}
