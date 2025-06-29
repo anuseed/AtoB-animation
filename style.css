@@ -59,7 +59,7 @@ nav a {
 
 /* Hero Section */
 .hero {
-  /* background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80"); */
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
   padding: 5rem 1rem;
@@ -93,13 +93,13 @@ nav a {
   clip-path: inset(0 100% 0 0);
   -webkit-clip-path: inset(0 100% 0 0);
   animation: clipReveal 6s ease forwards;
-  color: #ff680a;
+  color: white;
 }
 
 .step-refine {
   text-indent: 1.5em;
   margin-top: 0.3em;
-  color: #ff680a;
+  color: white;
   filter: blur(8px);
   animation: sharpen 6s forwards;
 }
@@ -112,7 +112,7 @@ nav a {
   animation: straightenText 6s forwards;
   /* Initially skew letters */
   transform: skew(-15deg);
-  color: #ff680a;
+  color: white;
 }
 
 /* ---------------- Animations ---------------- */
